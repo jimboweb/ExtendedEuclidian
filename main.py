@@ -3,8 +3,8 @@ from math import nan, floor
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-smaller = 46
-larger = 240
+smaller = 15
+larger = 69
 
 remainder = nan
 quotient = nan
@@ -31,6 +31,7 @@ while remainder !=0:
     i+=1
 
 gcd = r_prev
-coeff = [s_coef[1],t_coef[1]]
+coeff = [t_coef[0],s_coef[0]]
 print (f"gcd = {gcd}\tcoeff = {coeff[0]},{coeff[1]}")
+print(smaller * coeff[0] + larger * coeff[1])
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
